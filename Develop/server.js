@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const api = require('./routes/index')
+const api = require('./routes/apiRoutes')
 
 
 const PORT = express.evn.PORT || 3001;
