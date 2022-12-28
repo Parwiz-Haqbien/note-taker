@@ -1,5 +1,5 @@
 const express = require('express');
-const htmlRoutes = require('./routes/htmlRoutes');
+const htmlRoutes = require('./routes');
 const PORT = 3001;
 const app = express();
 app.use(express.urlencoded( {
