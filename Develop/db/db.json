@@ -2,9 +2,19 @@
     {
     "title":"This is cool",
     "text":"I really like this note taker",
-    "id":"8e723892-14cv-3325-9262-88a149b20he0"
-    },
+    "id":"8e723892-14cv-3325-9262-88a149b20he0"},
+    
     {"title":"Best footballer",
     "text":"The best footballer is Messi.",
-    "id":"ths7gf22-2h7b-23a9-9f7c-asf39cc74642"}
+    "id":"ths7gf22-2h7b-23a9-9f7c-asf39cc74642"},
+
+    {"title":"wow",
+    "text":"this works\n",
+    "id":"3e866050-9584-4f1c-91df-0cec60f0a7ae"},
+
+    {"title":"wow","text":"this works\n",
+    "id":"c69ce9c3-0f11-467d-9542-8184b8021d6f"},
+    {"title":"fgfggg",
+    "text":"fgfg",
+    "id":"2e494508-ce7b-4bf0-b8f8-e80a64b55936"}
 ]
