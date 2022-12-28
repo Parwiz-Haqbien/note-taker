@@ -7,7 +7,7 @@
 - [Contribution](#contribution)
 
 ## Description
-This is a note-taking application that uses Express.js and a JSON file to store and retrieve notes. You can create, view, and update notes with it.
+This is a note-taking application that uses Express.js and a JSON file to store and retrieve notes. You can create, view notes with it.
 
 ## Installation
 N/A
