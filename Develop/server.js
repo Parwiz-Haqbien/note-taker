@@ -1,17 +1,33 @@
 const express = require('express');
-const htmlRoutes = require('./routes');
-const PORT = 3001;
+const path = require('path');
+const api = require('./routes/index')
+
+
+const PORT = express.evn.PORT || 3001;
+
 const app = express();
-app.use(express.urlencoded( {
-    extended: true
-}));
-app.use(express.json())
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use('/api', api);
 
 app.use(express.static('public'));
-app.use(htmlRoutes);
-app.listen(PORT , () => {
-    console.log('listening on port' , PORT)
-});
 
+//Route for landing page
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
+);
 
+//Route for notes page
+app.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
 
+// Wildcard route to direct users to a the index page
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+);
+
+app.listen(PORT, () =>
+  console.log(`App listening at http://localhost:${PORT}`)
+);
